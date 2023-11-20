@@ -48,8 +48,7 @@ const Navbar = () => {
       <Link to="/">
         <h2>ReactGram</h2>
       </Link>
-      {/* <form id="search-form" onSubmit={handleSearch}> */}
-      <form id="search-form" >  
+      <form id="search-form" onSubmit={handleSearch}>
         <BsSearch />
         <input
           type="text"
