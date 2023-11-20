@@ -31,7 +31,7 @@ const Register = () => {
       confirmPassword,
     };
 
-    console.log(user);
+    // console.log(user);
 
     dispatch(register(user));
   };
@@ -50,25 +50,25 @@ const Register = () => {
           type="text"
           placeholder="Nome"
           onChange={(e) => setName(e.target.value)}
-          value={name}
+          value={name || ""}
         />
         <input
           type="email"
           placeholder="E-mail"
           onChange={(e) => setEmail(e.target.value)}
-          value={email}
+          value={email || ""}
         />
         <input
           type="password"
           placeholder="Senha"
           onChange={(e) => setPassword(e.target.value)}
-          value={password}
+          value={password || ""}
         />
         <input
           type="password"
           placeholder="Confirme a senha"
           onChange={(e) => setConfirmPassword(e.target.value)}
-          value={confirmPassword}
+          value={confirmPassword || ""}
         />
         {!loading && <input type="submit" value="Cadastrar" />}
         {loading && <input type="submit" disabled value="Aguarde..." />}
