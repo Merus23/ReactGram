@@ -9,39 +9,39 @@ import {
   BsFillCameraFill,
 } from "react-icons/bs";
 
-// Hooks
-// import { useState } from "react";
-// import { useAuth } from "../hooks/useAuth";
-// import { useDispatch, useSelector } from "react-redux";
-// import { useNavigate } from "react-router-dom";
+Hooks
+import { useState } from "react";
+import { useAuth } from "../hooks/useAuth";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
-// Redux
-// import { logout, reset } from "../slices/authSlice";
+Redux
+import { logout, reset } from "../slices/authSlice";
 
 const Navbar = () => {
-  // const { auth } = useAuth();
-  // const { user } = useSelector((state) => state.auth);
+  const { auth } = useAuth();
+  const { user } = useSelector((state) => state.auth);
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("");
 
-  // const handleLogout = () => {
-  //   dispatch(logout());
-  //   dispatch(reset());
+  const handleLogout = () => {
+    dispatch(logout());
+    dispatch(reset());
 
-  //   navigate("/login");
-  // };
+    navigate("/login");
+  };
 
-  // const handleSearch = (e) => {
-  //   e.preventDefault();
+  const handleSearch = (e) => {
+    e.preventDefault();
 
-  //   if (query) {
-  //     return navigate(`/search?q=${query}`);
-  //   }
-  // };
+    if (query) {
+      return navigate(`/search?q=${query}`);
+    }
+  };
 
   return (
     <nav id="nav">
