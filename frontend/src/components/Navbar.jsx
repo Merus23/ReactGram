@@ -9,13 +9,13 @@ import {
   BsFillCameraFill,
 } from "react-icons/bs";
 
-Hooks
+// Hooks
 import { useState } from "react";
 import { useAuth } from "../hooks/useAuth";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
-Redux
+// Redux
 import { logout, reset } from "../slices/authSlice";
 
 const Navbar = () => {
